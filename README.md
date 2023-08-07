@@ -26,8 +26,8 @@ Titanic Machine Learning from **[Disaster](https://www.kaggle.com/competitions/t
 
 ## [Etapa 4: Selecionando outros algoritmos para fazer a previsão](https://github.com/seppdaniel/TitanicDisaster/blob/main/titanic_pt4.ipynb)
 - Nesta etapa todas as colunas serão mantidas, e utilizaremos novos algoritmos para o monitoramento e a verficação do modelo
-- Os algoritmos que vamos utilizar nessa etapa são a **Regressão Logística** (vamos manter, pois foi o que apresentou melhores resultados nas etapas anteriores, **RandomForest e MLPClassifier (Redes Neurais)
-- O MLPClassifier (um algoritmo de Redes Neurais) obteve a maior acurávia nos dados de validação entre todos os modelos vistos até agora, porém ao usar esse modelo nos dados de teste (tabela de submissão na competição) o resultado foi pior do que na etapa 3, mostrando que **provavelmente tivemos um overfitting no nosso modelo**
+- Os algoritmos que vamos utilizar nessa etapa são a **Regressão Logística** (será mantido, pois foi o modelo que apresentou melhores resultados nas etapas anteriores, **RandomForest e MLPClassifier (Redes Neurais)
+- O MLPClassifier (um algoritmo de Redes Neurais) obteve a maior acurácia nos dados de validação entre todos os modelos vistos até agora, porém ao usar esse modelo nos dados de teste (tabela de submissão na competição) o resultado foi pior do que na etapa 3, mostrando que **provavelmente tivemos um overfitting no nosso modelo**
 - O **score público retornado pelo Kaggle foi: 0.69856
 
 ## [Etapa 5: Utilizando o GridSearchCV e determinando os melhores parâmetros](https://github.com/seppdaniel/TitanicDisaster/blob/main/titanic_pt5.ipynb)
