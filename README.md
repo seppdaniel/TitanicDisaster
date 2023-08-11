@@ -4,6 +4,41 @@ Titanic Machine Learning from **[Disaster](https://www.kaggle.com/competitions/t
 ![image](https://github.com/seppdaniel/TitanicDisaster/blob/main/img/Chart.JPG)
 ![image](https://github.com/seppdaniel/TitanicDisaster/assets/53501792/f37e2be2-8175-460b-b38f-d7040b8079f1)
 
+## Step 1: Initial Model
+In this step, an overview of the dataset was visualized using ydata-profiling, a library capable of generating a comprehensive dataset description.
+Columns with high cardinality were eliminated, and missing values were treated using mean and mode imputation. All textual columns were removed.
+Three Machine Learning models were created: Decision Tree, KNN, Logistic Regression. These models were evaluated using accuracy and confusion matrix.
+- Kaggle's public score returned: 0.66746
+
+## Step 2: Text Variable Treatment
+In the second step, the primary focus was to preprocess text variables for effective integration into the proposed model.
+For this treatment, lambda functions and OneHotEncoder were employed.
+Three Machine Learning models were used: Decision Tree, KNN, Logistic Regression. Evaluation was based on accuracy and confusion matrix.
+- Kaggle's public score returned: 0.75358
+
+## Step 3: Business Insight Deepening and Enhanced Data Treatment
+In the third step, the goal was to gain a deeper understanding of the data to facilitate enhanced treatment and potentially improve the prior results.
+Accomplishments:
+Enhanced comprehension of SibSp (number of siblings/spouses aboard the disaster) and Parch (number of parents/children aboard the Titanic) columns, resulting in the creation of two new columns: total family members aboard the ship and passenger's solo travel status.
+Lastly, a correlation analysis of all variables was conducted to select those most relevant to the model.
+Three Machine Learning models were used: Decision Tree, KNN, Logistic Regression. Evaluation was based on accuracy and confusion matrix.
+- Kaggle's public score returned: 0.77033
+
+## Step 4: Exploring Additional Prediction Algorithms
+In this step, all columns were retained, and new algorithms were introduced for model monitoring and validation.
+The algorithms utilized in this stage include Logistic Regression (retained due to its superior performance in earlier steps), RandomForest, and MLPClassifier (Neural Networks).
+MLPClassifier (a Neural Network algorithm) exhibited the highest validation accuracy among all previously seen models. However, upon testing this model on the submission dataset, its performance deteriorated compared to Step 3, suggesting potential overfitting in the model.
+- Kaggle's public score returned: 0.69856
+
+## Step 5: GridSearchCV Utilization and Optimal Parameter Determination
+The GridSearchCV technique is now employed to identify optimal parameters for the three models utilized in the previous step.
+In this instance, the chosen model was 'RandomForest,' which exhibited substantial improvements over Step 4 and surpassed its performance.
+- Kaggle's public score returned: 0.78229
+
+__________
+Portuguese
+__________
+
 ## [Etapa 1: Primeiro Modelo](https://github.com/seppdaniel/TitanicDisaster/blob/main/titanic_pt1.ipynb)
 - Nesta etapa foi visualizado um resumo da base utilizando o ydata-profiling, biblioteca capaz de gerar toda a descrição do dataset
   - Eliminação de colunas com **elevada cardinalidade**, tratamento de **valores vazios** utilizando média e a moda das variáveis e todas as **colunas de texto** foram eliminadas
